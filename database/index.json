@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    {
+      "name": "Code task tracker cli",
+      "status": "todo",
+      "id": 1
+    }
+  ]
+}

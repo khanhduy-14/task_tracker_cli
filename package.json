@@ -2,12 +2,19 @@
   "name": "task_tracker_cli",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
+  "bin": {
+    "task-cli": "./bin/index.js"
+  },
   "scripts": {
     "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
 }
