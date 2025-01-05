@@ -1,9 +1,22 @@
 {
   "tasks": [
     {
-      "name": "Code task tracker cli",
+      "name": "drink water",
+      "status": "done",
+      "id": 1,
+      "updatedAt": 1736076922466
+    },
+    {
+      "name": "drink water updated4",
+      "status": "in-progress",
+      "id": 3,
+      "updatedAt": 1736077342734
+    },
+    {
+      "name": "toto",
       "status": "todo",
-      "id": 1
+      "id": 3,
+      "createdAt": 1736078779006
     }
   ]
 }

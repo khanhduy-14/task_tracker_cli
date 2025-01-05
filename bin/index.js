@@ -1,7 +1,6 @@
 #! /usr/bin/env node
 
 import {program} from "commander";
-import {createServerRoute} from "../src/routes/index.js";
 import TaskCommand from "../src/commands/task.js";
 
 program
@@ -9,6 +8,11 @@ program
     .description("Task Tracker CLI")
 
 program.addCommand(TaskCommand.add)
+program.addCommand(TaskCommand.update)
+program.addCommand(TaskCommand.delete)
+program.addCommand(TaskCommand.markInProgress)
+program.addCommand(TaskCommand.markDone)
+program.addCommand(TaskCommand.list)
 
 program.parse(process.argv);
 
