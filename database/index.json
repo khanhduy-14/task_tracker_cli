@@ -1,22 +1,29 @@
 {
   "tasks": [
     {
-      "name": "drink water",
-      "status": "done",
+      "name": "task-1",
+      "status": 1,
       "id": 1,
-      "updatedAt": 1736076922466
+      "isDeleted": false,
+      "createdAt": 1736092274213,
+      "updatedAt": 1736092403960
     },
     {
-      "name": "drink water updated4",
-      "status": "in-progress",
-      "id": 3,
-      "updatedAt": 1736077342734
+      "name": "123123",
+      "status": 2,
+      "id": 2,
+      "isDeleted": true,
+      "createdAt": 1736092278234,
+      "updatedAt": 1736092969926,
+      "deletedAt": 1736093033707
     },
     {
-      "name": "toto",
-      "status": "todo",
+      "name": "task-3",
+      "status": 0,
       "id": 3,
-      "createdAt": 1736078779006
+      "isDeleted": false,
+      "createdAt": 1736092279798,
+      "updatedAt": 1736092279798
     }
   ]
 }

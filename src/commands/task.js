@@ -1,5 +1,6 @@
 import {Command} from "commander";
 import TaskController from "../controllers/task.js";
+import {EnumTaskStatus} from "../constants/task.js";
 
 
 export default class TaskCommand {
@@ -36,7 +37,7 @@ export default class TaskCommand {
             .description("Mark a task is in progress")
             .argument("<id>", "Task id")
             .action((id, name) => {
-                TaskController.update({id, status: 'in-progress'})
+                TaskController.update({id, status: EnumTaskStatus['in-progress']})
             })
     }
 
@@ -45,7 +46,7 @@ export default class TaskCommand {
             .description("Mark a task is done")
             .argument("<id>", "Task id")
             .action(async (id, name) => {
-                TaskController.update({id, status: 'done'})
+                TaskController.update({id, status: EnumTaskStatus['done']})
             })
     }
 
@@ -56,7 +57,7 @@ export default class TaskCommand {
             .action((status) => {
                 TaskController.getAll({
                     filters: {
-                        status
+                        status: EnumTaskStatus[status],
                     }
                 })
             })

@@ -29,7 +29,8 @@ class JsonUtils {
     static write(filePath, data) {
         try {
             const resolvedPath = path.resolve(filePath);
-            fs.writeFileSync(resolvedPath, JSON.stringify(data, null, 2), 'utf-8');
+            const previousData = this.read(filePath);
+            fs.writeFileSync(resolvedPath, JSON.stringify({...previousData, ...data}, null, 2), 'utf-8');
             return true;
         } catch (error) {
             console.log(`Failed to write JSON file: ${error.message}`)
