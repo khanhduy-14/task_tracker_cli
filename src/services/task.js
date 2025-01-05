@@ -16,7 +16,7 @@ class TaskService {
 
     static getOne = ({filters = {}} = {}) => {
         const task = Task.getOne({filters})
-        if (task.isDeleted) return;
+        if (task?.isDeleted) return;
         return task;
     }
 
